@@ -15,6 +15,7 @@ def start_command(update, contex):
         '📣 راستی، میتونی با روش زیر برنامه یا بازی'
         'مورد نظر خودت را در کافه بازار جستجو کنی:\n'
         '`@bazaar_dlbot Instagram`',
+        reply_to_message_id=message_id,
         ParseMode.MARKDOWN
     )
 
