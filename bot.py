@@ -23,14 +23,6 @@ def text_message(update, contex):
     chat_id = update.message.chat_id
     message_id = update.message.message_id
     message_text = update.message.text
-    keyboard = [
-        [
-            InlineKeyboardButton(
-                'Show Full Description',
-                callback_data='show_description')
-        ]
-    ]
-    reply_markup = InlineKeyboardMarkup(keyboard)
     if '/video/' in message_text or '/serial/' in message_text:
         contex.bot.send_message(
             chat_id,
@@ -66,7 +58,6 @@ def text_message(update, contex):
             f'🔗 Download Link:\n{download_link}',
             reply_to_message_id=message_id,
             parse_mode=ParseMode.MARKDOWN,
-            reply_markup=reply_markup
         )
 
 
