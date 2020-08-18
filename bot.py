@@ -14,9 +14,12 @@ def start_command(update, contex):
         'دانلود میکنم یا لینک بهت میدم خودت دانلود کنی.\n\n'
         '📣 راستی، میتونی با روش زیر برنامه یا بازی'
         'مورد نظر خودت را در کافه بازار جستجو کنی:\n'
-        '`@bazaar_dlbot Instagram`',
+        '`@bazaar_dlbot Instagram`\n\n\n'
+        '🧑‍💻 Developer: Matin Baloochestani\n'
+        '🖥 Source code is available on '
+        '[GitHub](https://github.com/Matin-B/bazaar_dlbot)',
         reply_to_message_id=message_id,
-        ParseMode.MARKDOWN
+        parse_mode=ParseMode.MARKDOWN
     )
 
 
